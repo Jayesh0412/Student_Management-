@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard (Simple)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Management Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Add Student</h2>
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="course" placeholder="Course" required />
+        <input type="url" id="image" placeholder="Image URL (optional)" />
+        <button type="submit">Add Student</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Student List</h2>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="emptyMsg">No students yet.</p>
+    </section>
+
+    <section class="demo-section">
+      <h2>Async & Event Loop Demo</h2>
+      <button id="runDemo">Run Demo</button>
+      <ul id="demoOutput"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Data saved locally in your browser.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
