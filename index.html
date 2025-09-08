@@ -17,7 +17,13 @@
       <form id="studentForm">
         <input type="text" id="name" placeholder="Name" required />
         <input type="email" id="email" placeholder="Email" required />
-        <input type="text" id="course" placeholder="Course" required />
+        <select id="course" required>
+           <option value="" disabled selected>Select Course</option>
+           <option value="HTML">HTML</option>
+           <option value="CSS">CSS</option>
+           <option value="JavaScript">JavaScript</option>
+           <option value="React">React</option>
+        </select>
         <input type="url" id="image" placeholder="Image URL (optional)" />
         <button type="submit">Add Student</button>
       </form>
